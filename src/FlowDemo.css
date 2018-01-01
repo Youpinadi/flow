@@ -1,0 +1,81 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    --pink: #e21671;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.App {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App-header {
+    z-index: 1;
+    position: relative;
+    color: white;
+    height: 190px;
+}
+
+.App-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 120px;
+}
+
+.App-header p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    background-color: #333;
+    padding: 8px;
+    justify-content: space-around;
+}
+
+pre {
+    position: relative;
+    width: 230px;
+    text-align: left;
+    padding: 20px;
+    background-color: #333;
+}
+
+pre:after {
+    content: ''; /* generate the pseudo-element */
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    border-width: 65px 0px 65px 30px;
+    border-style: solid;
+    border-color: transparent #333;
+}
+
+.pink {
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.example {
+    margin: auto;
+    margin-top: 16px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
