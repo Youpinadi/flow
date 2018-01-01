@@ -1,40 +1,46 @@
 {
-  "name": "web",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@nivo/sankey": "0.33.0",
-    "d3-color": "1.0.3",
-    "d3-force": "1.1.0",
-    "d3-hierarchy": "1.1.5",
-    "d3-interpolate": "1.1.6",
-    "d3-scale": "1.0.7",
-    "d3-shape": "1.2.0",
-    "fetch": "1.1.0",
-    "lodash-es": "4.17.4",
-    "lodash.isequal": "^4.5.0",
-    "lodash.sample": "^4.2.1",
-    "numeral": "2.0.6",
-    "prop-types": "15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-motion": "^0.5.2",
-    "react-scripts": "1.0.17",
-    "react-select": "1.1.0",
-    "underscore": "1.8.3",
-    "vizceral-react": "https://github.com/Youpinadi/vizceral-react.git"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "jshint .",
-    "validate": "npm ls"
-  },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ]
+    "name": "web",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@nivo/sankey": "0.33.0",
+        "d3-color": "1.0.3",
+        "d3-force": "1.1.0",
+        "d3-hierarchy": "1.1.5",
+        "d3-interpolate": "1.1.6",
+        "d3-scale": "1.0.7",
+        "d3-shape": "1.2.0",
+        "fetch": "1.1.0",
+        "lodash-es": "4.17.4",
+        "lodash.isequal": "^4.5.0",
+        "lodash.sample": "^4.2.1",
+        "numeral": "2.0.6",
+        "prop-types": "15.6.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-motion": "^0.5.2",
+        "react-scripts": "1.0.17",
+        "react-select": "1.1.0",
+        "underscore": "1.8.3",
+        "vizceral-react": "https://github.com/Youpinadi/vizceral-react.git"
+    },
+    "homepage": "http://youpinadi.github.io/flow",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "lint": "jshint .",
+        "validate": "npm ls",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "pre-commit": [
+        "lint",
+        "validate",
+        "test"
+    ],
+    "devDependencies": {
+        "gh-pages": "^1.1.0"
+    }
 }

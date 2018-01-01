@@ -103,14 +103,7 @@ class Flow extends React.Component {
     moveParticles = particles => {
         const dx = this.state.speed;
         const dy = 0;
-        const {
-            startX,
-            startY,
-            endX,
-            endY,
-            spreadLimit,
-            particleSize
-        } = this.props;
+        const { startX, startY, endX, endY, spreadLimit } = this.props;
 
         const distanceToSource = distance(startX, startY, endX, endY);
 

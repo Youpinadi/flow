@@ -38,7 +38,6 @@ const Example = ({ value, particleSize, colorStart, colorEnd }) => (
                 maxParticles={maxParticles}
                 particleSize={particleSize}
                 maxReference={maxReference}
-                maxReference={maxReference}
                 colorStart={colorStart}
                 colorEnd={colorEnd}
             />
